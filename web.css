@@ -1,0 +1,44 @@
+body {
+    background-color: #0f5742;
+     /* The Green Color of Pakistan's Flag */
+}
+h1 {
+    background-color: white;
+    color: #0f5742;
+    text-align: center;
+    border-radius: 10px;
+    margin: 3vh;
+}
+#main {
+/* Affects Both the Containers */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#first, #second {
+    /* Styling */
+    background-color:white;
+    color: #0f5742; 
+    text-align: center;
+    border-radius: 10px;
+    /* Alignment */ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+button {
+    /* The Button Should be in the Center of its Container */
+    width: vw;
+    height: 5%;
+    font-size: vw;
+    margin: 0 auto 3%;
+    /* Styling */
+    background-color: #0f5742;
+    color: white;
+    border: none;
+}
+#third {
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
