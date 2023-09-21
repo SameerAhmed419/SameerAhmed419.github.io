@@ -4,6 +4,8 @@ function guide(event) {
     event.preventDefault();
     // val Will hold the value of the selected option
     let val = document.querySelector("input[name='eng']:checked").value;
+    // Both the Divisions Must Disappear
+    document.querySelector("#main").style.display = "none";
     // url will hold the url to be used by the frame
     let url;
     switch (val) {
