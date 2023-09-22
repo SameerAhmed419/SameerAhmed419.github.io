@@ -26,6 +26,12 @@ h1 {
     flex-direction: column;
     justify-content: center;
 }
+#first {
+    width: 66%;
+}
+#second {
+    width: 33%;
+}
 button {
     /* The Button Should be in the Center of its Container */
     width: vw;
@@ -41,6 +47,6 @@ button {
     display: none;
     justify-content: center;
     align-items: center;
-    width: 64vw;
-    height: 36vw;
+    width: 100vw;
+    height: 56.25vw; 
 }
