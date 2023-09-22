@@ -41,4 +41,6 @@ button {
     display: none;
     justify-content: center;
     align-items: center;
+    width: 64vw;
+    height: 36vw;
 }
