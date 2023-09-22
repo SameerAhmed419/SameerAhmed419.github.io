@@ -45,8 +45,8 @@ function guide(event) {
     contain.appendChild(frame);
     // The Frame is to be Adjusted
     frame.src = url;
-    frame.width = "64vw";
-    frame.height = "36vw";
+    frame.width = "90%";
+    frame.height = "90%";
     frame.style.border = "none";
     // The Container is to be Revealed
     contain.style.display = "flex";
