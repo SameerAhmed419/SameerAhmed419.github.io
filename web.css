@@ -8,9 +8,9 @@
 /* Inbetweener */
 @media screen and (min-width: 601px) and (max-width: 991px) {
    h1 {font-size: 4.5vw;}
-   #first {font-size: 100%;}
-   #second {font-size: 100%;}
-   #fourth {font-size: 100%;}
+   #first {font-size: 5%;}
+   #second {font-size: 5%;}
+   #fourth {font-size: 5%;}
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media screen and (min-width: 992px) and {
