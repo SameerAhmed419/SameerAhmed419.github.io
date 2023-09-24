@@ -27,6 +27,7 @@
     from { top: 0;}
     to {
         max-height: 2ex;
+        min-height: 2ex;
         position: relative;
         top: -20vh;
     }
