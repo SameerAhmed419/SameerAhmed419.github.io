@@ -10,37 +10,77 @@
    h1 {font-size: 4.5vw;}
    #first {font-size: 100%;}
    #second {font-size: 100%;}
-   #fourth {font-size: 100%;}
+   #fourth {font-size: 1vh;}
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media screen and (min-width: 992px) and {
    h1 {font-size: 5vw;}
    #first {font-size: 100%;}
    #second {font-size: 100%;}
-   #fourth {font-size: 100%;}
+   #fourth {font-size: 1vh;}
 }
-@keyframes up {
-    from {transform: translateY(0);}
-    to {transform: translateY(20vh);}
+@media only screen and (orientation: landscape) {
+    * {overflow: scroll;}
 }
-@keyframes roll {
-    from { top: 0;}
+@media only screen and (orientation: portrait) {
+    * {overflow: hidden;}
+}
+@keyframes moveup {
+    from { 
+        background-color: white;
+        position: static;
+        top: 0;
+        visibility: hidden;
+    }
     to {
-        max-height: 2ex;
-        min-height: 2ex;
+        background-color: #0f5742;
         position: relative;
-        top: -20vh;
+        top: -25vh;
+        visibility: visible;
+    }
+}
+@keyframes colorlessmoveup {
+    from { 
+        background-color: #0f5742;
+        position: static;
+        top: 0;
+        visibility: visible;
+    }
+    to {
+        background-color: #0f5742; 
+        position: relative;
+        top: -25vh;
+        visibility: visible;
+    }
+}
+
+@keyframes opacity {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@keyframes rollup {
+    from { 
+        min-height: 0%;
+        max-height: 100%;
+        top: 0;
+        position: static;
+    }
+    to {
+      min-height: 2ex;
+      max-height: 2ex;
+      position: relative;
+      top: -20vh;
     }
 }
 @keyframes flash {
-    from {opacity: 1; }
-    to {opacity: 0; }
+    from {opacity: 0}
+    50% {opacity: 1}
+    to {opacity: 0 }
 }
 * {
     /* box-sizing: border-box; */
     padding: 0;
     max-height: 100%;
-    overflow: hidden;
 }
 html, body {
     /* All the Elements Must be Aligned in the Middle */    
@@ -48,6 +88,7 @@ html, body {
     padding: 0;
     margin: 0;
     height: 100%;
+    background-image: linear-gradient(#0f5742, white);
 }
 h1 {
     /* The Title: Judge By Yourself */
@@ -66,17 +107,15 @@ h1 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    overflow: visible;
 }
 .hid {
-    /* The Coloring of both the Upper Divisions */
+    /* The Coloring of  the Upper Divisions */
     background-color: #0f5742;
     color: white;
-    /* Both the Divisions Must be Horizontally Aligned */
-    /* Both the Divisions Must Silde Up And Down */
-    animation-name: roll;
-    animation-duration: 5s;
-    animation-fill-mode: both;
-    animation-play-state: paused;
+    /*  the Divisions Must be Horizontally Aligned */
+    /*  the Divisions Must Silde Up And Down */
+    animation: rollup 5s ease 1 normal forwards paused;
 }
 #btn {
     background-color: #0f5742;
@@ -99,21 +138,28 @@ h1 {
 a:link {
     color: white;
     background-color: transparent;
-    text-decoration: none;
+    text-decoration: underline white;
+}
+a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline white double;
 }
 #main2 {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    overflow: visible;
 }
 #third {
     border-radius: 10px;
-    background-color: #0f5742;
+    background-color: white;
     visibility: hidden;
-    animation-name: up;
-    animation-duration: 5s;
-    animation-fill-mode: both;
-    animation-play-state: paused;
+    animation: moveup 5s 1  normal forwards paused;
+}
+#vid {
+    opacity: 0;
+    animation: opacity 5s 1  normal forwards paused;
 }
 #fourth {
     text-align: center;
@@ -121,8 +167,10 @@ a:link {
 #foot {
     width: 80vw;
     height: 100%;
-    text-align: center;
     background-color: #0f5742;
     color: white;
     margin: auto;
+    padding: 1ex;
+    font-weight: bold;
+    animation: flash 10s infinite alternate forwards running;
 }
