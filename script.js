@@ -4,7 +4,8 @@
     // Change the Content of #foot
    
     let initial = document.getElementById("foot").innerHTML;
-    //console.log(initial); document.getElementById("foot").addEventListener("animationiteration", changetext);
+    //console.log(initial);
+ document.getElementById("foot").addEventListener("animationiteration", changetext);
     function changetext() {
         let text = this.innerHTML;
         let tofind = "Tell Me About Your Judgement About EMAM";
