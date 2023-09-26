@@ -88,7 +88,7 @@ html, body {
     padding: 0;
     margin: 0;
     height: 100%;
-    background-image: linear-gradient(#0f5742, white);
+    background-image: linear-gradient(#0f5742, black);
 }
 h1 {
     /* The Title: Judge By Yourself */
