@@ -126,6 +126,7 @@ h1 {
     width: 15%;
     height: 10%;
     margin-bottom: 1vh;
+}
 #btn:focus {
     background-color: white;
     text-decoration: none;
@@ -135,7 +136,6 @@ h1 {
     width: 15%;
     height: 10%;
     margin-bottom: 1vh;
-
 }
 #first {
     width: 64%;
