@@ -126,6 +126,16 @@ h1 {
     width: 15%;
     height: 10%;
     margin-bottom: 1vh;
+#btn:focus {
+    background-color: white;
+    text-decoration: none;
+    border: 1px solid #0f5742;
+    color: #0f5742;
+    font-size: 1vh;
+    width: 15%;
+    height: 10%;
+    margin-bottom: 1vh;
+
 }
 #first {
     width: 64%;
@@ -159,6 +169,7 @@ a:visited {
 }
 #vid {
     opacity: 0;
+    border: none;
     animation: opacity 5s 1  normal forwards paused;
 }
 #fourth {
