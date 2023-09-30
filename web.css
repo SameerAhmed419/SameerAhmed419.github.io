@@ -10,14 +10,14 @@
    h1 {font-size: 4.5vw;}
    #first {font-size: 100%;}
    #second {font-size: 100%;}
-   #fourth {font-size: 1vh;}
+   #fourth {font-size: 0.7vh;}
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media screen and (min-width: 992px) and {
    h1 {font-size: 5vw;}
    #first {font-size: 100%;}
    #second {font-size: 100%;}
-   #fourth {font-size: 1vh;}
+   #fourth {font-size: 2vh;}
 }
 @media only screen and (orientation: landscape) {
     * {overflow: scroll;}
