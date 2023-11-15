@@ -1,9 +1,9 @@
 @keyframes slider {
   0% {
-    transform: scaleY(1);
+    transform: scaleY(1) rotate(0deg);
   }
   100% {
-    transform: scaleY(0);
+    transform: scaleY(0) rotate(180deg);
   }
 }
 
