@@ -10,8 +10,8 @@ let json;
 let slideStatus = true;
 const first = document.querySelector("#first");
 const third = document.querySelector("#third");
-const betterOptionEnglish = document.querySelector("#p2").innerHtML;
-const betterOptionUrdu = document.querySelector("#p2urdu").innerHtML;
+const betterOptionEnglish = document.querySelector("#p2");
+const betterOptionUrdu = document.querySelector("#p2urdu");
 let hadithRevealed = localStorage.getItem("done");
 booksButton.onclick = () => {
     if (!bookState) {
@@ -161,7 +161,14 @@ document.querySelector("#translate").addEventListener("click", async () => {
   }
   document.body.style.fontWeight =  eng ? "bold" : "normal";
   document.body.style.fontSize = eng ? "110%" : "100%";
-  document.querySelector("#p2").innerHtML = eng ? betterOptionUrdu :  betterOptionEnglish;
+  if (eng == false) {
+    betterOptionEnglish.style.display = "block";
+    betterOptionUrdu.style.display = "none";
+  }
+  else {
+    betterOptionEnglish.style.display = "none";
+    betterOptionUrdu.style.display = "block";
+  }
   eng = !eng;
 });
 if (hadithRevealed != "yes") {
