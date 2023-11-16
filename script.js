@@ -2,9 +2,17 @@
 //On Content Load
 document.body.onload = () => {
 //On Content Load
-let books = document.querySelector("#second");
+const books = document.querySelector("#second");
 let bookState = false;
-let booksButton = document.querySelector("#books");
+const booksButton = document.querySelector("#books");
+let eng = true;
+let json;
+let slideStatus = true;
+const first = document.querySelector("#first");
+const third = document.querySelector("#third");
+const betterOptionEnglish = document.querySelector("#p2").innerHtML;
+const betterOptionUrdu = document.querySelector("#p2urdu").innerHtML;
+let hadithRevealed = localStorage.getItem("done");
 booksButton.onclick = () => {
     if (!bookState) {
       books.style.display = "block";
@@ -23,44 +31,47 @@ booksButton.onclick = () => {
       bookState = false;
     }
 };
+let animationStage = "myMail";
 const foot = document.getElementById("foot");
 let initial = foot.innerHTML;
+let footur = document.querySelector("#footur");
 foot.addEventListener("animationiteration", () => {
     let text = foot.innerHTML;
-    let tofind = "Tell Me About Your Judgement About EMAM";
-    if (text.includes(tofind)) {
+
+    if (animationStage == "myMail") {
        let link1 = document.createElement("a"); 
        link1.href = "https://ahlesunnatpak.com/";
-       link1.innerHTML = "Engineer Muhammad Ali Mirza's Website"; 
+       link1.innerHTML = eng ? "Engineer Muhammad Ali Mirza's Website" : "انجینئر محمد علی مرزا کی ویب سائٹ"; 
        let brk = document.createElement("BR");
        let link2 = document.createElement("a");
        link2.href = "https://m.youtube.com/user/EngineerMuhammadAliM";
-       link2.innerHTML = "His Main Channel&nbsp";
+       link2.innerHTML = eng ? "His Main Channel&nbsp" : "ان کا مرکزی چینل&nbsp";
        let link3 = document.createElement("a");
        link3.href = "https://m.youtube.com/@EngineerMuhammadAliMirzaComp";
-       link3.innerHTML = "&nbspHis Full-Lectures Channel";
+       link3.innerHTML = eng ? "&nbspHis Full-Lectures Channel" : "&nbspان کا مکمل لیکچر چینل";
        foot.innerHTML = "";
        foot.appendChild(link1);
        foot.appendChild(brk);
        foot.appendChild(link2);
        foot.appendChild(link3);
+       animationStage = "notMyMail";
     } else {
-       foot.innerHTML = initial;
+       if (eng) {
+        foot.innerHTML = initial;
+       }
+       else {
+        foot.innerHTML = footur.innerHTML;
+       }
+       animationStage = "myMail";
     }
 });
 
 document.querySelector("#btn").addEventListener("click", event => {
   event.preventDefault();
+  //document.querySelector("#fourth").style.backgroundColor = "#F5F5F5";
   let checkvalue = document.querySelector("input[name='eng']:checked");
   if (checkvalue) {
-    let first = document.querySelector("#first");
-    let third = document.querySelector("#third");
-    first.style.animation = "none";
-    third.style.animation = "none";
-    void first.offsetWidth;
-    void third.offsetWidth;
-    first.style.animation = null;
-    third.style.animation = null;
+    resetAnimations();
     first.style.animation = "slider 5s 1 normal forwards running";
     third.style.animation = "moveup 5s 1 normal forwards running";
     document.querySelector("#undo").style.display = "inline";
@@ -116,40 +127,55 @@ document.querySelector("#btn").addEventListener("click", event => {
      frame.style.maxHeight = '338px';
      frame.style.display = 'block';
      frame.style.margin = '0 auto';
+     frame.style.border = "2vw solid skyblue";
+     frame.style.borderRadius = "5%";
   }
 });
-let slideStatus = true;
 document.querySelector("#undo").addEventListener("click", () => {
   if (slideStatus) {
-    let first = document.querySelector("#first");
-    let third = document.querySelector("#third");
-    first.style.animation = "none";
-    third.style.animation = "none";
-    void first.offsetWidth;
-    void third.offsetWidth;
-    first.style.animation = null;
-    third.style.animation = null;
+    resetAnimations();
     first.style.animation = "slider 5s 1 reverse forwards running";
     third.style.animation = "moveup 5s 1 reverse forwards running";
-    document.querySelector("#undo").innerHTML = "Hide Lectures";
+    document.querySelector("#undo").innerHTML = eng ? "Hide Lectures" : "ليکجر جھپایں" ;
     slideStatus = false;
   }
   else if (!slideStatus) {
-    let first = document.querySelector("#first");
-    let third = document.querySelector("#third");
-    first.style.animation = "none";
-    third.style.animation = "none";
-    void first.offsetWidth;
-    void third.offsetWidth;
-    first.style.animation = null;
-    third.style.animation = null;
+    resetAnimations();
     first.style.animation = "slider 5s 1 normal forwards running";
     third.style.animation = "moveup 5s 1 normal forwards running";
-    document.querySelector("#undo").innerHTML = "Show Lectures";  
+    document.querySelector("#undo").innerHTML = eng ? "Show Lectures" : "مضامین دکھائیں";  
     slideStatus = true;
   }
 });
-booksButton.click();
+
+document.querySelector("#translate").addEventListener("click", async () => {
+  if (!json) {
+    let file = await fetch("urdu.json");
+    json = await file.json();
+  }
+  for (let key in json) {
+    let element = document.getElementById(`${key}`);
+    if (element) {
+      element.textContent = eng ? json[key]["ur"]: json[key]["en"];
+    }
+  }
+  document.body.style.fontWeight =  eng ? "bold" : "normal";
+  document.body.style.fontSize = eng ? "110%" : "100%";
+  document.querySelector("#p2").innerHtML = eng ? betterOptionUrdu :  betterOptionEnglish;
+  eng = !eng;
+});
+if (hadithRevealed != "yes") {
+  localStorage.setItem("done","yes");
+  booksButton.click();
+}
+function resetAnimations() {
+  first.style.animation = "none";
+  third.style.animation = "none";
+  void first.offsetWidth;
+  void third.offsetWidth;
+  first.style.animation = null;
+  third.style.animation = null;
+}
 //On Content Load
 };
 //On Content Load
