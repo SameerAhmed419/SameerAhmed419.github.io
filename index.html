@@ -3,6 +3,7 @@
 <html lang="en-PK">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="Cache-Control" content="no-store" />
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <title>Judge Engineer Muhammad Ali Mirza</title> 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,9 +11,11 @@
   <script type="module" src="script.js"></script>
 </head>
 <body>
+    <button id="translate" type="button">Eng/اردو</button>
     <div id="zero">
-    <h1>Judge By Yourself</h1> 
-    <q id="books"><b>Open/Close Hadith-Books Section</b></q>
+    <h1 id="head">Judge By Yourself</h1> 
+    <br/>
+    <p id="books">Open/Close Hadith-Books Section<br/><p/>
     </div>
   <p id="placer"></p>
   <div id="main">
@@ -27,37 +30,37 @@
     <!-- The First option -->
     <div  >
     <input type="radio" id="ali1" name="eng" value="a">
-   <label for="ali1"> <b>Majlis No. 50 </b> <br  > <q>Engineer Muhammad Ali Mirza Explaining Himself</q> </label>
+   <label for="ali1" id="forali1"> <b>Majlis No. 50 </b> <br  > <q>Engineer Muhammad Ali Mirza Explaining Himself</q> </label>
    </div>
    <br>
    <!-- The Second option -->
    <div  >
    <input type="radio" id="ali2" name="eng" value="b"> 
-   <label for="ali2"><b>Majlis No. 100 </b> <br  > <q>The Truth About Our Religious System</q> </label>
+   <label for="ali2" id="forali2"><b>Majlis No. 100 </b> <br  > <q>The Truth About Our Religious System</q> </label>
    </div>
    <br>
    <!-- The Third option -->
    <div  >
    <input type="radio" id="ali3" name="eng" value="c">
-   <label for="ali3"> <b>Masalah No. 179</b> <br  > <q>EMAM Presents His Case To the Public</q></label>
+   <label for="ali3" id="forali3"> <b>Masalah No. 179</b> <br  > <q>EMAM Presents His Case To the Public</q></label>
    </div>
    <br>
    <!-- The Fourth option -->
    <div  >
    <input type="radio" id="ali4" name="eng" value="d">
-   <label for="ali4"> <b>His Students' Questioning Him</b> <br  > <q>Critical Questions to EMAM</q></label>
+   <label for="ali4" id="forali4"> <b>His Students' Questioning Him</b> <br  > <q>Critical Questions to EMAM</q></label>
    </div>
    <br>
    <!-- The Fifth option -->
    <div  >
    <input type="radio" id="ali5" name="eng" value="e">
-   <label for="ali5"> <b>EMAM's Life Story</b> <br  > <q>He Describes His Journey In Detail</q></label>
+   <label for="ali5" id="forali5"> <b>EMAM's Life Story</b> <br  > <q>He Describes His Journey In Detail</q></label>
    </div>
    <br  >
    <!-- The Sixth Option-->
    <div>
    <input type="radio" id="ali6" name="eng" value="f">
-   <label for="ali6"> <b>The Financial Situation of EMAM</b> <br> <q>He Describes His Source Of Income And The Expenses Of The Academy</q></label>
+   <label for="ali6" id="forali6"> <b>The Financial Situation of EMAM</b> <br> <q>He Describes His Source Of Income And The Expenses Of The Academy</q></label>
    </div>
    <br>
    <!-- The Button -->
@@ -70,26 +73,27 @@
   <br/><br/>
    <b  id="hide2">Download Hadith Books</b>
    <br>
-   <q  >Verify What He Says</q>
+   <q id="q1">Verify What He Says</q>
    <br><br>
-   <p>Click the Links:</p>
-   <a href="https://onedrive.live.com/download?resid=51BD7999F86789C%21621&authkey=!AAgx4_E04rHac9Y" target="_blank" >Sahih Bukhari</a>
+   <p id="p1">Click the Links:</p>
+   <a id="a1" href="https://onedrive.live.com/download?resid=51BD7999F86789C%21621&authkey=!AAgx4_E04rHac9Y" target="_blank" >Sahih Bukhari</a>
    <br><br>
-   <a href="https://onedrive.live.com/download?resid=51BD7999F86789C%21622&authkey=!ACi8kpxs6q4xf2k" target="_blank" >Sahih Muslim</a>
+   <a id="a2" href="https://onedrive.live.com/download?resid=51BD7999F86789C%21622&authkey=!ACi8kpxs6q4xf2k" target="_blank" >Sahih Muslim</a>
    <br><br>
-   <a href="https://onedrive.live.com/download?resid=51BD7999F86789C%21620&authkey=!AJUXuvjZJcnzMMk" target="_blank" >Sunan Abu Dawood</a>
+   <a id="a3" href="https://onedrive.live.com/download?resid=51BD7999F86789C%21620&authkey=!AJUXuvjZJcnzMMk" target="_blank" >Sunan Abu Dawood</a>
    <br><br>
-   <a href="https://onedrive.live.com/download?resid=51BD7999F86789C%21625&authkey=!AIkMxmHE6DrSO-w" target="_blank" >Sunan Tirmizi</a>
+   <a id="a4" href="https://onedrive.live.com/download?resid=51BD7999F86789C%21625&authkey=!AIkMxmHE6DrSO-w" target="_blank" >Sunan Tirmizi</a>
    <br><br>
-   <a href="https://onedrive.live.com/download?resid=51BD7999F86789C%21624&authkey=!AA2BvXS0ZnLVcPk" target="_blank" >Sunan Ibne Maja</a>
+   <a id="a5" href="https://onedrive.live.com/download?resid=51BD7999F86789C%21624&authkey=!AA2BvXS0ZnLVcPk" target="_blank" >Sunan Ibne Maja</a>
    <br><br>
-   <a href="https://onedrive.live.com/download?resid=51BD7999F86789C%21626&authkey=!AIpDX62ytJIHnFo" target="_blank" >Sunan Nasai As-Sughra</a>
+   <a id="a6" href="https://onedrive.live.com/download?resid=51BD7999F86789C%21626&authkey=!AIpDX62ytJIHnFo" target="_blank" >Sunan Nasai As-Sughra</a>
    <br><br>
-   <a href="https://onedrive.live.com/download?resid=51BD7999F86789C%21623&authkey=!AM8fGi7Xfk1i0b8" target="_blank" >Sunan Darmi</a>
+   <a id="a7" href="https://onedrive.live.com/download?resid=51BD7999F86789C%21623&authkey=!AM8fGi7Xfk1i0b8" target="_blank" >Sunan Darmi</a>
    <br><br>
-   <a href="https://onedrive.live.com/download?resid=51BD7999F86789C%21619&authkey=!APnEMebLYTyrgvI" target="_blank" >Mishkat Ul-Masabeeh</a>
+   <a id="a8" href="https://onedrive.live.com/download?resid=51BD7999F86789C%21619&authkey=!APnEMebLYTyrgvI" target="_blank" >Mishkat Ul-Masabeeh</a>
    <br><br>
-  <p  > A Better option: <a href="https://www.theislam360.com/" target="_blank">Islam360</a></p>
+  <p  id="p2"> A Better option: <a href="https://www.theislam360.com/" target="_blank">Islam360</a></p>
+  <p  id="p2urdu"> يہ بہتر ہے: <a href="https://www.theislam360.com/" target="_blank">Islam360</a></p>
   </div>
   </div>
   <div id="main2">
@@ -97,7 +101,8 @@
      <!-- The Frame Will Go Here -->
   </div>
   <div id="fourth">
-  <p id="foot">E-Mail: <a href="mailto:sa0712198@gmail.com">sa071298@gmail.com<a/> <br> Report Issues; Give Suggestions; And Tell Me About Your Judgement About EMAM</p>
+  <p id="foot">E-Mail: <a id ="myMail" href="mailto:sa0712198@gmail.com">sa071298@gmail.com<a/> <br> Report Issues; Give Suggestions; And Tell Me About Your Judgement About EMAM</p>
+  <p id="footur">ای میل: <a id ="myMail" href="mailto:sa0712198@gmail.com">sa071298@gmail.com<a/> <br> مسائل کی اطلاع دیں؛ تجاویز دیں؛ اور مجھے بتائیں کہ آپ انجینئر محمد علی مرزا کے بارے میں کیا خیال رکھتے ہیں</p>
   </div>
   </div>
 </body>

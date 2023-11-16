@@ -14,7 +14,7 @@
   }
   100% {
     position: relative;
-    top: -40vh;
+    top: -45vh;
   }
 }
 @keyframes flash {
@@ -36,6 +36,19 @@ body {
   text-align: center;
   min-height: 100vh;
 }
+#translate {
+  position: fixed;
+  right: 0;
+  top: 0;
+  border: 1vh solid skyblue;
+  width: auto;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  background-color: #f5f5f5;
+  color: #333333;
+  z-index: 1;
+  cursor: pointer;
+}
 div {
   background-color: skyblue;
   position: relative;
@@ -47,30 +60,39 @@ h1 {
   background-color: #f5f5f5;
   color: #333333;
   display: inline-block;
+  font-weight: bold;
+  cursor: pointer;
 }
 #zero {
-  overflow: hidden; 
+  overflow: hidden;
+  border-bottom: 1vh solid skyblue;  
 }
 #btn {
   background-color: #f9f9f9;
   border: none;
   color: #333333;
+  cursor: pointer;
 }
 #btn:focus {
   background-color: #333333;
   border: none;
   color: #f9f9f9;
+  cursor: pointer;
 }
 #undo {
   display: none;
-  background-color: #f9f9f9;
+  background-color: skyblue;
   border: none;
   color: #333333;
+  z-index: 1;
 }
 .hid {
   animation: 5s slider both paused;
   overflow: hidden;
   height: auto;
+}
+#first {
+  border: 1vw solid skyblue;
 }
 #second {
   display: none;
@@ -85,6 +107,10 @@ h1 {
   height: 0;
   border-radius: 5px;
   transition: all 3s;
+  border: 1vw solid skyblue;
+}
+#p2urdu {
+  display: none;
 }
 #foot {
   background-color: skyblue;
@@ -95,9 +121,17 @@ h1 {
 }
 #third {
   animation: moveup 5s 1 normal forwards paused;
+  background-color: #F5F5F5;
+}
+#fourth, #main2, #main {
+  background-color: #F5F5F5;
 }
 #foot {
   animation: flash 10s infinite alternate forwards running;
+  background-color: skyblue;
+}
+#footur {
+  display: none;
 }
 a {
   color: #333333;

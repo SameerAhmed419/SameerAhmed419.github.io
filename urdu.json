@@ -1,0 +1,90 @@
+{
+  "head": {
+    "en": "Judge By Yourself",
+    "ur": "خود فیصلہ کریں"
+  },
+  "books": {
+    "en": "Open/Close Hadith-Books Section",
+    "ur": "حدیث کتب کا حصہ کھولیں/بند کریں"
+  },
+  "undo": {
+    "en": "Show Lectures",
+    "ur": "مضامین دکھائیں"
+  },
+  "hide1": {
+    "en": "Watch a Lecture",
+    "ur": "ایک ليکچر دیکھیں"
+  },
+  "forali1": {
+    "en": "Majlis No. 50",
+    "ur": "مجلس نمبر 50"
+  },
+  "forali2": {
+    "en": "Majlis No. 100",
+    "ur": "مجلس نمبر 100"
+  },
+  "forali3": {
+    "en": "Masalah No. 179",
+    "ur": "مسئلہ نمبر 179"
+  },
+  "forali4": {
+    "en": "His Students' Questioning Him",
+    "ur": "ان کے طلباء نے ان سے سوالات کیے"
+  },
+  "forali5": {
+    "en": "EMAM's Life Story",
+    "ur": "انجینئر محمد علی مرزا کی زندگی کی کہانی"
+  },
+  "forali6": {
+    "en": "The Financial Situation of EMAM",
+    "ur": "انجینئر محمد علی مرزا کی مالی صورتحال"
+  },
+  "btn": {
+    "en": "Start!",
+    "ur": "شروع کریں"
+  },
+  "hide2": {
+    "en": "Download Hadith Books",
+    "ur": "حدیث کتب ڈاؤنلوڈ کریں"
+  },
+  "q1": {
+    "en": "Verify What He Says",
+    "ur": "ان کی باتوں کی تصدیق کریں"
+  },
+  "p1": {
+    "en": "Click the Links:",
+    "ur": "لنکس پر کلک کریں:"
+  },
+  "a1": {
+    "en": "Sahih Bukhari",
+    "ur": "صحیح بخاری"
+  },
+  "a2": {
+    "en": "Sahih Muslim",
+    "ur": "صحیح مسلم"
+  },
+  "a3": {
+    "en": "Sunan Abu Dawood",
+    "ur": "سنن ابو داؤد"
+  },
+  "a4": {
+    "en": "Sunan Tirmizi",
+    "ur": "سنن ترمذی"
+  },
+  "a5": {
+    "en": "Sunan Ibne Maja",
+    "ur": "سنن ابن ماجہ"
+  },
+  "a6": {
+    "en": "Sunan Nasai As-Sughra",
+    "ur": "سنن نسائی الصغرى"
+  },
+  "a7": {
+    "en": "Sunan Darmi",
+    "ur": "سنن درمی"
+  },
+  "a8": {
+    "en": "Mishkat Ul-Masabeeh",
+    "ur": "مشکاۃ المصابیح"
+  }
+}
