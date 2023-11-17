@@ -145,3 +145,8 @@ a {
     width: 66%;
   }
 }
+@media screen and (max-height: 640px) {
+  * {
+    font-size: 95%;
+  }
+}
