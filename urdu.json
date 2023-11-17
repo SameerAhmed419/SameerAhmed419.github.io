@@ -16,28 +16,28 @@
     "ur": "ایک ليکچر دیکھیں"
   },
   "forali1": {
-    "en": "Majlis No. 50",
-    "ur": "مجلس نمبر 50"
+    "en": "<b>Majlis No. 50 </b> <br  > <q>Engineer Muhammad Ali Mirza Explaining Himself</q>",
+    "ur": "<b>مجلس نمبر 50 </b> <br  > <q>انجینئر محمد علی مرزا خود کو بیان کرتے ہوئے</q>"
   },
   "forali2": {
-    "en": "Majlis No. 100",
-    "ur": "مجلس نمبر 100"
+    "en": "<b>Majlis No. 100 </b> <br  > <q>The Truth About Our Religious System</q>",
+    "ur": "<b>مجلس نمبر 100 </b> <br  > <q>ہمارے دینی نظام کے بارے میں حقیقت</q>"
   },
   "forali3": {
-    "en": "Masalah No. 179",
-    "ur": "مسئلہ نمبر 179"
+    "en": "<b>Masalah No. 179</b> <br  > <q>EMAM Presents His Case To the Public</q>",
+    "ur": "<b>مسئلہ نمبر 179</b> <br  > <q>انجینئر محمد علی مرزا عوام کے سامنے اپنا مقدمہ پیش کرتے ہوئے</q>"
   },
   "forali4": {
-    "en": "His Students' Questioning Him",
-    "ur": "ان کے طلباء نے ان سے سوالات کیے"
+    "en": "<b>His Students' Questioning Him</b> <br  > <q>Critical Questions to EMAM</q>",
+    "ur": "<b>ان کے طلباء نے ان سے سوالات کی ہیں</b> <br  > <q>انجینئر محمد علی مرزا کو اہم سوالات</q>"
   },
   "forali5": {
-    "en": "EMAM's Life Story",
-    "ur": "انجینئر محمد علی مرزا کی زندگی کی کہانی"
+    "en": "<b>EMAM's Life Story</b> <br  > <q>He Describes His Journey In Detail</q>",
+    "ur": "<b>انجینئر محمد علی مرزا کی زندگی کی کہانی</b> <br  > <q>انہوں نے تفصیل سے اپنے سفر کی تفصیل بیان کی ہے</q>"
   },
   "forali6": {
-    "en": "The Financial Situation of EMAM",
-    "ur": "انجینئر محمد علی مرزا کی مالی صورتحال"
+    "en": "<b>The Financial Situation of EMAM</b> <br> <q>He Describes His Source Of Income And The Expenses Of The Academy</q>",
+    "ur": "<b>انجینئر محمد علی مرزا کی مالی صورتحال</b> <br> <q>انہوں نے اپنے آمدن کا ذریعہ اور اکیڈمی کے اخراجات کی تفصیل بیان کی ہے</q>"
   },
   "btn": {
     "en": "Start!",
@@ -86,5 +86,13 @@
   "a8": {
     "en": "Mishkat Ul-Masabeeh",
     "ur": "مشکاۃ المصابیح"
+  },
+  "foot": {
+    "en": "E-Mail: <a id=\"myMail\" href=\"mailto:sa0712198@gmail.com\">sa071298@gmail.com</a> <br> Report Issues; Give Suggestions; And Tell Me About Your Judgement About EMAM",
+    "ur": "ای میل: <a id=\"myMail\" href=\"mailto:sa0712198@gmail.com\">sa071298@gmail.com</a> <br> مسائل کی اطلاع دیں؛ تجاویز دیں؛ اور مجھے بتائیں کہ آپ انجینئر محمد علی مرزا کے بارے میں کیا خیال رکھتے ہیں"
+  },
+  "p2": {
+    "en": "A Better option: <a href=\"https://www.theislam360.com/\" target=\"_blank\">Islam360</a>",
+    "ur": "يہ بہتر ہے: <a href=\"https://www.theislam360.com/\" target=\"_blank\">Islam360</a>"
   }
 }
