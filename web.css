@@ -114,9 +114,6 @@ h1 {
   border: 1vw solid skyblue;
   overflow: auto;
 }
-#p2urdu {
-  display: none;
-}
 #foot {
   background-color: skyblue;
   position: fixed;
@@ -134,9 +131,6 @@ h1 {
 #foot {
   animation: flash 10s infinite alternate forwards running;
   background-color: skyblue;
-}
-#footur {
-  display: none;
 }
 a {
   color: #333333;
