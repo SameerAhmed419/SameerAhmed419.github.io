@@ -134,7 +134,7 @@ document.querySelector("#undo").addEventListener("click", () => {
     resetAnimations();
     first.style.animation = "slider 5s 1 reverse forwards running";
     third.style.animation = "moveup 5s 1 reverse forwards running";
-    document.querySelector("#undo").innerHTML = eng ? "Hide Lectures" : "ليکجر جھپایں" ;
+    document.querySelector("#undo").innerHTML = eng ? "Hide Lectures" : "ليکچر چھپائیں" ;
     slideStatus = false;
   }
   else if (!slideStatus) {
