@@ -108,6 +108,7 @@ h1 {
   border-radius: 5px;
   transition: all 3s;
   border: 1vw solid skyblue;
+  overflow: auto;
 }
 #p2urdu {
   display: none;
