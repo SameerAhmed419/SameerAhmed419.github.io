@@ -11,7 +11,6 @@ let slideStatus = true;
 const first = document.querySelector("#first");
 const third = document.querySelector("#third");
 const betterOptionEnglish = document.querySelector("#p2");
-const betterOptionUrdu = document.querySelector("#p2urdu");
 let hadithRevealed = localStorage.getItem("done");
 booksButton.onclick = () => {
     if (!bookState) {
@@ -34,7 +33,6 @@ booksButton.onclick = () => {
 let animationStage = "myMail";
 const foot = document.getElementById("foot");
 let initial = foot.innerHTML;
-let footur = document.querySelector("#footur");
 foot.addEventListener("animationiteration", () => {
     let text = foot.innerHTML;
 
@@ -60,7 +58,7 @@ foot.addEventListener("animationiteration", () => {
         foot.innerHTML = initial;
        }
        else {
-        foot.innerHTML = footur.innerHTML;
+        foot.innerHTML = json.foot.ur;
        }
        animationStage = "myMail";
     }
@@ -156,18 +154,8 @@ document.querySelector("#translate").addEventListener("click", async () => {
   for (let key in json) {
     let element = document.getElementById(`${key}`);
     if (element) {
-      element.textContent = eng ? json[key]["ur"]: json[key]["en"];
+      element.innerHTML = eng ? json[key]["ur"]: json[key]["en"];
     }
-  }
-  document.body.style.fontWeight =  eng ? "bold" : "normal";
-  document.body.style.fontSize = eng ? "110%" : "100%";
-  if (eng == false) {
-    betterOptionEnglish.style.display = "block";
-    betterOptionUrdu.style.display = "none";
-  }
-  else {
-    betterOptionEnglish.style.display = "none";
-    betterOptionUrdu.style.display = "block";
   }
   eng = !eng;
 });
