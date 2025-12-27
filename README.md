@@ -11,7 +11,7 @@ Sort thousands of files in seconds. Completely offline.
 - **Exclude specific folders and files** from organization
 - **Undo function** to reverse changes
 - **Remove duplicates** during organization
-- **BLAKE3 checks** to ensure data safety
+- **BLAKE3 checks** to ensure data safety during deduplication
 - **Multi-language support**: English, Arabic, Chinese, Hindi, and Spanish
 
 🔒 **100% Private & Offline**
@@ -21,13 +21,13 @@ Sort thousands of files in seconds. Completely offline.
 ### Linux
 
 #### x86_64 (Intel/AMD)
-[Download x86_64-unknown-linux-gnu.tar.gz](https://github.com/SameerAhmed419/SameerAhmed419.github.io/releases/download/1.2.0/x86_64-unknown-linux-gnu.tar.gz)
+[Download x86_64-unknown-linux-gnu.tar.gz](https://github.com/SameerAhmed419/SameerAhmed419.github.io/releases/download/1.2.1/x86_64-unknown-linux-gnu.tar.gz)
 
 #### ARM64
-[Download aarch64-unknown-linux-gnu.tar.gz](https://github.com/SameerAhmed419/SameerAhmed419.github.io/releases/download/1.2.0/aarch64-unknown-linux-gnu.tar.gz)
+[Download aarch64-unknown-linux-gnu.tar.gz](https://github.com/SameerAhmed419/SameerAhmed419.github.io/releases/download/1.2.1/aarch64-unknown-linux-gnu.tar.gz)
 
 ### macOS
-[Download filesorg_apple.zip](https://github.com/SameerAhmed419/SameerAhmed419.github.io/releases/download/1.2.0/filesorg_apple.zip) (Universal binary - works on both Intel and Apple Silicon)
+[Download filesorg_apple.zip](https://github.com/SameerAhmed419/SameerAhmed419.github.io/releases/download/1.2.1/filesorg_apple.zip) (Universal binary - works on both Intel and Apple Silicon)
 
 ### Windows
 - **Microsoft Store**: [Get it from Microsoft Store](https://apps.microsoft.com/detail/9nfvvt296q0n)
